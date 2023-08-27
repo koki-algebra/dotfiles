@@ -4,3 +4,6 @@ if [[ -x `which colordiff` ]]; then
 else
   alias diff='diff -u'
 fi
+
+# node
+PATH=$HOME/.nodebrew/current/bin:$PATH
