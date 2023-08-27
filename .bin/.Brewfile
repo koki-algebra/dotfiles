@@ -3,6 +3,7 @@ cask_args appdir: "/Applications"
 brew "tree"
 brew "go"
 brew "gh"
+brew "protobuf"
 
 cask "slack"
 cask "google-chrome"
