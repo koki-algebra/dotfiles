@@ -1,0 +1,13 @@
+{
+	"files.autoSave": "afterDelay",
+	"editor.fontSize": 16,
+	"terminal.integrated.fontSize": 16,
+	"editor.wordWrap": "on",
+	"editor.renderWhitespace": "boundary",
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "Community Material Theme Darker",
+	"workbench.startupEditor": "none"
+}
