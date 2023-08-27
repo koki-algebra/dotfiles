@@ -15,7 +15,7 @@ fi
 defaults write com.apple.dock autohide -bool true
 
 # Show recently used apps in a separate section of the Dock
-defaults write com.apple.dock show-recents -bool false
+defaults write com.apple.dock show-recents -bool true
 
 # ====================
 #
@@ -24,7 +24,7 @@ defaults write com.apple.dock show-recents -bool false
 # ====================
 
 # Show all file extensions in the Finder
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write -g AppleShowAllExtensions -bool true
 
 # Show hidden files in the Finder
 defaults write com.apple.finder AppleShowAllFiles -bool true
@@ -77,9 +77,13 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 #
 # ====================
 
-defaults write NSGlobalDomain KeyRepeat -int 5
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
+# Key repeat
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Live Conversion
+defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool false
 
 # ====================
 #

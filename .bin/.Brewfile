@@ -4,6 +4,7 @@ brew "tree"
 brew "go"
 brew "gh"
 brew "protobuf"
+brew "colordiff"
 
 cask "slack"
 cask "google-chrome"
