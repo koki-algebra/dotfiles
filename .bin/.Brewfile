@@ -7,6 +7,7 @@ brew "protobuf"
 brew "colordiff"
 brew "nodebrew"
 brew "awscli"
+brew "aws-vault"
 
 cask "slack"
 cask "google-chrome"
