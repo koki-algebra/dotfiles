@@ -6,6 +6,7 @@ brew "gh"
 brew "protobuf"
 brew "colordiff"
 brew "nodebrew"
+brew "awscli"
 
 cask "slack"
 cask "google-chrome"
