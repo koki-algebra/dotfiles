@@ -7,3 +7,7 @@ fi
 
 # node
 PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# Golang
+GOBIN=$HOME/go/bin
+PATH=$PATH:$GOBIN
