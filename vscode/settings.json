@@ -9,5 +9,6 @@
 	"editor.formatOnSave": true,
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.colorTheme": "Material Theme Darker High Contrast",
-	"workbench.startupEditor": "none"
+	"workbench.startupEditor": "none",
+	"editor.minimap.enabled": false
 }
