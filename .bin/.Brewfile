@@ -13,3 +13,5 @@ cask "visual-studio-code"
 cask "zoom"
 cask "warp"
 cask "docker"
+
+mas "LINE", id: 539883307
