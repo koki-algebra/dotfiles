@@ -94,6 +94,12 @@ defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool fals
 # Group windows by application
 defaults write com.apple.dock expose-group-apps -bool true
 
+# Separate working space for each display
+defaults write com.apple.spaces spans-displays -bool false
+
+# Automatically sort spaces based on recent usage
+defaults write com.apple.dock mru-spaces false
+
 # ====================
 #
 # Feedback Assistant
