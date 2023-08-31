@@ -71,6 +71,10 @@ defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 1
 # Enable dragging with three finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 
+# Tap by click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+
 # ====================
 #
 # Keyboard
