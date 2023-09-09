@@ -10,5 +10,9 @@
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.colorTheme": "Material Theme Darker High Contrast",
 	"workbench.startupEditor": "none",
-	"editor.minimap.enabled": false
+	"editor.minimap.enabled": false,
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"redhat.telemetry.enabled": true
 }
