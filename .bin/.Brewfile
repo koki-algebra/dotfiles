@@ -9,6 +9,7 @@ brew "colordiff"
 brew "nodebrew"
 brew "awscli"
 brew "aws-vault"
+brew "bufbuild/buf/buf"
 
 cask "slack"
 cask "google-chrome"
