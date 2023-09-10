@@ -10,6 +10,7 @@ brew "nodebrew"
 brew "awscli"
 brew "aws-vault"
 brew "bufbuild/buf/buf"
+brew "goose"
 
 cask "slack"
 cask "google-chrome"
