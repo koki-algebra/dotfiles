@@ -11,3 +11,6 @@ PATH=$HOME/.nodebrew/current/bin:$PATH
 # Golang
 GOBIN=$HOME/go/bin
 PATH=$PATH:$GOBIN
+
+# PostgreSQL client
+PATH=/opt/homebrew/Cellar/libpq/16.0/bin:$PATH

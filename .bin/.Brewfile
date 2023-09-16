@@ -12,6 +12,7 @@ brew "aws-vault"
 brew "bufbuild/buf/buf"
 brew "goose"
 brew "hashicorp/tap/terraform"
+brew "libpq"
 
 cask "slack"
 cask "google-chrome"
