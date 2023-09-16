@@ -10,3 +10,4 @@ ms-vscode.makefile-tools
 redhat.vscode-yaml
 oderwat.indent-rainbow
 mechatroner.rainbow-csv
+hashicorp.terraform
