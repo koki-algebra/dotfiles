@@ -13,6 +13,7 @@ brew "bufbuild/buf/buf"
 brew "goose"
 brew "hashicorp/tap/terraform"
 brew "libpq"
+brew "mysql-client"
 
 cask "slack"
 cask "google-chrome"
