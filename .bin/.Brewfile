@@ -25,3 +25,4 @@ cask "discord"
 
 mas "LINE", id: 539883307
 mas "Bitwarden", id: 1352778147
+mas "Xcode", id: 497799835
