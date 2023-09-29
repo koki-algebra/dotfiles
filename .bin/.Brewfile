@@ -14,6 +14,7 @@ brew "goose"
 brew "hashicorp/tap/terraform"
 brew "libpq"
 brew "mysql-client"
+brew "cocoapods"
 
 cask "slack"
 cask "google-chrome"
