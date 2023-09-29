@@ -15,5 +15,6 @@
 		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
 	},
 	"redhat.telemetry.enabled": true,
-	"explorer.confirmDelete": false
+	"explorer.confirmDelete": false,
+	"debug.console.fontSize": 16
 }
