@@ -31,6 +31,11 @@ github: ## Setup GitHub
 	@.bin/github.sh
 	@echo "\033[0;32mDone.\033[0m"
 
+goinstall: ## Run go install
+	@echo "\033[0;34mRun goinstall.sh\033[0m"
+	@.bin/goinstall.sh
+	@echo "\033[0;32mDone.\033[0m"
+
 help: ## Show help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
