@@ -15,6 +15,7 @@ brew "hashicorp/tap/terraform"
 brew "libpq"
 brew "mysql-client"
 brew "cocoapods"
+brew "ffmpeg"
 
 cask "slack"
 cask "google-chrome"
