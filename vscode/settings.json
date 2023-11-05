@@ -16,5 +16,6 @@
 	},
 	"redhat.telemetry.enabled": true,
 	"explorer.confirmDelete": false,
-	"debug.console.fontSize": 16
+	"debug.console.fontSize": 16,
+	"go.toolsManagement.autoUpdate": true
 }
