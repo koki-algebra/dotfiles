@@ -1,16 +1,16 @@
 {
-	"files.autoSave": "afterDelay",
 	"editor.fontSize": 16,
-	"terminal.integrated.fontSize": 16,
 	"editor.wordWrap": "on",
 	"editor.renderWhitespace": "boundary",
 	"editor.insertSpaces": false,
 	"editor.tabSize": 2,
 	"editor.formatOnSave": true,
+	"editor.minimap.enabled": false,
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.colorTheme": "Material Theme Darker High Contrast",
 	"workbench.startupEditor": "none",
-	"editor.minimap.enabled": false,
+	"terminal.integrated.fontSize": 16,
+	"files.autoSave": "afterDelay",
 	"explorer.confirmDelete": false,
 	"debug.console.fontSize": 16,
 	"go.toolsManagement.autoUpdate": true,
@@ -18,5 +18,13 @@
 		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
 	},
 	"remote.autoForwardPortsSource": "hybrid",
-	"json.schemaDownload.enable": true
+	"json.schemaDownload.enable": true,
+	// Markdown
+	"markdown.preview.breaks": true,
+	// Markdown Lint
+	"markdownlint.config": {
+		"MD010": false,
+		"MD024": false,
+		"MD040": false
+	}
 }
