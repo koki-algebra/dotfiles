@@ -11,11 +11,12 @@
 	"workbench.colorTheme": "Material Theme Darker High Contrast",
 	"workbench.startupEditor": "none",
 	"editor.minimap.enabled": false,
+	"explorer.confirmDelete": false,
+	"debug.console.fontSize": 16,
+	"go.toolsManagement.autoUpdate": true,
 	"[dockerfile]": {
 		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
 	},
-	"redhat.telemetry.enabled": true,
-	"explorer.confirmDelete": false,
-	"debug.console.fontSize": 16,
-	"go.toolsManagement.autoUpdate": true
+	"remote.autoForwardPortsSource": "hybrid",
+	"json.schemaDownload.enable": true
 }
