@@ -24,6 +24,7 @@ cask "zoom"
 cask "warp"
 cask "docker"
 cask "discord"
+cask "brave-browser"
 
 mas "LINE", id: 539883307
 mas "Bitwarden", id: 1352778147
