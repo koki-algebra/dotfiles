@@ -17,6 +17,3 @@ PATH=/opt/homebrew/Cellar/libpq/16.1_1/bin:$PATH
 
 # MySQL client
 PATH=/opt/homebrew/Cellar/mysql-client/8.2.0/bin:$PATH
-
-# Flutter
-PATH=$HOME/development/flutter/bin:$PATH
