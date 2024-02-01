@@ -16,6 +16,7 @@ brew "libpq"
 brew "mysql-client"
 brew "cocoapods"
 brew "ffmpeg"
+brew "golangci-lint"
 
 cask "slack"
 cask "google-chrome"
