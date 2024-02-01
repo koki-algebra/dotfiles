@@ -30,6 +30,7 @@
 	"go.toolsManagement.autoUpdate": true,
 	"go.lintTool": "golangci-lint",
 	"go.lintFlags": [
+		"--config=${workspaceFolder}/.golangci.yaml",
 		"--fast"
 	]
 }
