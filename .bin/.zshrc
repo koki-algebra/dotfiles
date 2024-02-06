@@ -16,4 +16,4 @@ PATH=$PATH:$GOBIN
 PATH=/opt/homebrew/Cellar/libpq/16.1_1/bin:$PATH
 
 # MySQL client
-PATH=/opt/homebrew/Cellar/mysql-client/8.2.0/bin:$PATH
+PATH=/opt/homebrew/Cellar/mysql-client/8.3.0/bin:$PATH
