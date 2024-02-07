@@ -1,0 +1,25 @@
+2024-02-08 01:26:23,504 DEBUG    root            Running [gcloud] with arguments: [-v: "None"]
+2024-02-08 01:26:23,504 DEBUG    root            Loaded Command Group: ['gcloud', 'version']
+2024-02-08 01:26:23,505 DEBUG    root            Running [gcloud.version] with arguments: []
+2024-02-08 01:26:23,506 DEBUG    root            Chosen display Format:flattened[no-pad,separator=" "]
+2024-02-08 01:26:23,506 INFO     root            Display format: "flattened[no-pad,separator=" "]"
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ Google Cloud SDK
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___  
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ 463.0.0
+
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ bq
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___  
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ 2.0.101
+
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ core
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___  
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ 2024.02.02
+
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ gcloud-crc32c
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___  
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ 1.0.0
+
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ gsutil
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___  
+2024-02-08 01:26:23,506 INFO     ___FILE_ONLY___ 5.27
+
