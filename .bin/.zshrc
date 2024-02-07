@@ -13,7 +13,7 @@ GOBIN=$HOME/go/bin
 PATH=$PATH:$GOBIN
 
 # PostgreSQL client
-PATH=/opt/homebrew/Cellar/libpq/16.1_1/bin:$PATH
+PATH=/opt/homebrew/opt/libpq/bin:$PATH
 
 # MySQL client
-PATH=/opt/homebrew/Cellar/mysql-client/8.3.0/bin:$PATH
+PATH=/opt/homebrew/opt/mysql-client/bin:$PATH
