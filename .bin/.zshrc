@@ -8,12 +8,21 @@ fi
 # nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# Golang
-GOBIN=$HOME/go/bin
-PATH=$PATH:$GOBIN
-
 # PostgreSQL client
-PATH=/opt/homebrew/opt/libpq/bin:$PATH
+export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 
 # MySQL client
-PATH=/opt/homebrew/opt/mysql-client/bin:$PATH
+export PATH=/opt/homebrew/opt/mysql-client/bin:$PATH
+
+# Golang
+export GOBIN=$HOME/go/bin
+export PATH=$PATH:$GOBIN
+
+switchGOROOT() {
+  export GOROOT=$(go$1 env GOROOT)
+  export PATH=$GOROOT/bin:$PATH
+  go version
+}
+
+# Remove duplicate paths
+typeset -U PATH
