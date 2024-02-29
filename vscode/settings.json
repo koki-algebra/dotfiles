@@ -26,11 +26,19 @@
 		"MD024": false,
 		"MD040": false
 	},
-	// golang
+	// Golang
 	"go.toolsManagement.autoUpdate": true,
 	"go.lintTool": "golangci-lint",
 	"go.lintFlags": [
 		"--config=${workspaceFolder}/.golangci.yml",
 		"--fast"
-	]
+	],
+	// Rust
+	"[rust]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
