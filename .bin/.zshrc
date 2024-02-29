@@ -1,8 +1,26 @@
-# colordiff
-if [[ -x $(which colordiff) ]]; then
-  alias diff='colordiff -u'
-else
-  alias diff='diff -u'
+# eza
+if [[ -x $(which eza) ]]; then
+  alias ls="eza"
+fi
+
+# bat
+if [[ -x $(which bat) ]]; then
+  alias cat="bat"
+fi
+
+# delta
+if [[ -x $(which delta) ]]; then
+  alias diff="delta"
+fi
+
+# fd
+if [[ -x $(which fd) ]]; then
+  alias find="fd"
+fi
+
+# ripgrep
+if [[ -x $(which rg) ]]; then
+  alias grep="rg"
 fi
 
 # nvm
