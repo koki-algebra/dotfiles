@@ -1,23 +1,39 @@
 cask_args appdir: "/Applications"
 
+# Utility commands
 brew "tree"
-brew "go"
+brew "eza"
+brew "fd"
+brew "bat"
+brew "ripgrep"
+brew "git-delta"
+
+# GitHub
 brew "gh"
-brew "protobuf"
+
+# gRPC
 brew "grpcurl"
-brew "colordiff"
-brew "nvm"
-brew "awscli"
-brew "aws-vault"
 brew "bufbuild/buf/buf"
-brew "goose"
+
+# Database
 brew "libpq"
 brew "mysql-client"
-brew "cocoapods"
-brew "ffmpeg"
+brew "goose"
+
+# Golang
+brew "go"
 brew "golangci-lint"
+
+# Node.js
+brew "nvm"
+
+# Terraform
 brew "tfenv"
 brew "tflint"
+
+# AWS
+brew "awscli"
+brew "aws-vault"
 
 cask "slack"
 cask "google-chrome"
