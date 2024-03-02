@@ -30,6 +30,12 @@
     "MD024": false,
     "MD040": false
   },
+  // SQL
+  "sqlfluff.executablePath": "sqlfluff",
+	"sqlfluff.config": "${workspaceFolder}/.sqlfluff",
+	"[sql]": {
+		"editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+	},
   // Golang
   "go.toolsManagement.autoUpdate": true,
   "go.lintTool": "golangci-lint",
