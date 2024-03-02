@@ -1,7 +1,6 @@
 cask_args appdir: "/Applications"
 
 # Utility commands
-brew "tree"
 brew "eza"
 brew "fd"
 brew "bat"
