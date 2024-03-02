@@ -19,6 +19,7 @@ brew "bufbuild/buf/buf"
 brew "libpq"
 brew "mysql-client"
 brew "goose"
+brew "sqlfluff"
 
 # Golang
 brew "go"
