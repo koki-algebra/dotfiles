@@ -9,6 +9,7 @@ brew "ripgrep"
 brew "git-delta"
 
 # GitHub
+brew "git"
 brew "gh"
 
 # gRPC
