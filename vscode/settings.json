@@ -69,5 +69,7 @@
       "statusBarItem.remoteBackground": "#84FFFF"
     }
   },
-  "materialTheme.accent": "Sky"
+  // Material Theme & Icon
+  "materialTheme.accent": "Sky",
+  "material-icon-theme.files.color": "#90a4ae"
 }
