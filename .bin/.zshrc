@@ -42,5 +42,8 @@ switchGOROOT() {
   go version
 }
 
+# Python
+source "$HOME/.rye/env"
+
 # Remove duplicate paths
 typeset -U PATH
