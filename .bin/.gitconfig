@@ -16,3 +16,6 @@ email = yotsuba00040@gmail.com
 
 [diff]
     colorMoved = default
+
+[init]
+	defaultBranch = main

@@ -10,7 +10,6 @@ packages=(
 	"google.golang.org/protobuf/cmd/protoc-gen-go@latest"
 	"google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest"
 	"connectrpc.com/connect/cmd/protoc-gen-connect-go@latest"
-	"entgo.io/ent/cmd/ent@latest"
 )
 
 for package in "${packages[@]}"; do
