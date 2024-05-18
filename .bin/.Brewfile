@@ -10,6 +10,7 @@ brew "git-delta"
 # GitHub
 brew "git"
 brew "gh"
+brew "pre-commit"
 
 # gRPC
 brew "grpcurl"
