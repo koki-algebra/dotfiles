@@ -44,7 +44,7 @@ cask "zoom"
 cask "warp"
 cask "docker"
 cask "discord"
-cask "brave-browser"
+cask "arc"
 cask "google-cloud-sdk"
 
 mas "LINE", id: 539883307
