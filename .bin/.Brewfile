@@ -38,7 +38,6 @@ brew "awscli"
 brew "aws-vault"
 
 cask "slack"
-cask "google-chrome"
 cask "visual-studio-code"
 cask "zoom"
 cask "warp"
