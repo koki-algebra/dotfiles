@@ -26,11 +26,6 @@ code: ## Create symbolic links for setttings.json & install extensions
 	@vscode/sync.sh
 	@echo "\033[0;32mDone.\033[0m"
 
-github: ## Setup GitHub
-	@echo "\033[0;34mRun github.sh\033[0m"
-	@.bin/github.sh
-	@echo "\033[0;32mDone.\033[0m"
-
 goinstall: ## Run go install
 	@echo "\033[0;34mRun goinstall.sh\033[0m"
 	@.bin/goinstall.sh
