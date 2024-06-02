@@ -1,5 +1,8 @@
 cask_args appdir: "/Applications"
 
+# Vim
+brew "vim"
+
 # Utility commands
 brew "eza"
 brew "fd"
