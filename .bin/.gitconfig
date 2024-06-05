@@ -1,6 +1,6 @@
 [user]
-name = koki-algebra
-email = biz.kokiyamada1022@gmail.com
+    name = koki-algebra
+    email = biz.kokiyamada1022@gmail.com
 
 [core]
     pager = delta
@@ -19,4 +19,4 @@ email = biz.kokiyamada1022@gmail.com
     colorMoved = default
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
