@@ -4,6 +4,7 @@ email = yotsuba00040@gmail.com
 
 [core]
     pager = delta
+    editor = vim
 
 [interactive]
     diffFilter = delta --color-only
