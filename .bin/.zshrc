@@ -23,11 +23,6 @@ if [[ -x $(which rg) ]]; then
   alias grep="rg"
 fi
 
-# jnv
-if [[ -x $(which jnv) ]]; then
-  alias jq="jnv"
-fi
-
 # nvm
 source $(brew --prefix nvm)/nvm.sh
 
