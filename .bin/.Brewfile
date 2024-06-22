@@ -9,6 +9,7 @@ brew "fd"
 brew "bat"
 brew "ripgrep"
 brew "git-delta"
+brew "jnv"
 
 # GitHub
 brew "git"

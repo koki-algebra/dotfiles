@@ -18,29 +18,24 @@
   },
   "remote.autoForwardPortsSource": "hybrid",
   "json.schemaDownload.enable": true,
-  // Markdown
   "[markdown]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
   "markdown.preview.breaks": true,
-  // Markdown Lint
   "markdownlint.config": {
     "MD010": false,
     "MD024": false,
     "MD040": false
   },
-  // SQL
   "sqlfluff.executablePath": "sqlfluff",
-	"sqlfluff.config": "${workspaceFolder}/.sqlfluff",
-	"[sql]": {
-		"editor.defaultFormatter": "dorzey.vscode-sqlfluff"
-	},
-  // Golang
+  "sqlfluff.config": "${workspaceFolder}/.sqlfluff",
+  "[sql]": {
+    "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+  },
   "go.toolsManagement.autoUpdate": true,
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--config=${workspaceFolder}/.golangci.yml", "--fast"],
-  // Rust
   "[rust]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4
@@ -76,5 +71,11 @@
     },
     "[Material Theme Palenight High Contrast]": {}
   },
-  "material-icon-theme.files.color": "#90a4ae"
+  "material-icon-theme.files.color": "#90a4ae",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
