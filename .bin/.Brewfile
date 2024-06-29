@@ -24,12 +24,7 @@ brew "bufbuild/buf/buf"
 # Database
 brew "libpq"
 brew "mysql-client"
-brew "goose"
 brew "sqlfluff"
-
-# Golang
-brew "go"
-brew "golangci-lint"
 
 # Node.js
 brew "nvm"
@@ -40,7 +35,6 @@ brew "tflint"
 
 # AWS
 brew "awscli"
-brew "aws-vault"
 
 cask "slack"
 cask "visual-studio-code"
