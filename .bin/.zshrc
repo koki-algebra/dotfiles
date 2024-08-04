@@ -23,6 +23,9 @@ if [[ -x $(which rg) ]]; then
   alias grep="rg"
 fi
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # nvm
 source $(brew --prefix nvm)/nvm.sh
 
