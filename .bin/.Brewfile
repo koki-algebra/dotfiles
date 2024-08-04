@@ -11,6 +11,7 @@ brew "ripgrep"
 brew "git-delta"
 brew "jnv"
 brew "jq"
+brew "direnv"
 
 # GitHub
 brew "git"
