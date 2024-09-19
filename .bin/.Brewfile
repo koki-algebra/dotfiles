@@ -20,7 +20,7 @@ brew "pre-commit"
 
 # gRPC
 brew "grpcurl"
-brew "bufbuild/buf/buf"
+brew "buf"
 
 # Database
 brew "libpq"
