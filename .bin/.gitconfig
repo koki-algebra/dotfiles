@@ -12,14 +12,17 @@
 [delta]
     navigate = true
 
-[merge]
-    conflictstyle = diff3
+[init]
+    defaultBranch = main
 
 [diff]
     colorMoved = default
 
-[init]
-    defaultBranch = main
+[merge]
+    conflictstyle = diff3
+
+[rebase]
+    autostash = true
 
 [push]
     default = current
