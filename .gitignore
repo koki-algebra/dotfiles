@@ -1,3 +1,6 @@
-.bin/.config/gcloud
-.bin/.config/flutter
-.bin/.config/configstore
+# Ignore everything in .bin/.config
+.bin/.config/*
+
+# But not these directories
+!.bin/.config/gh/
+!.bin/.config/git/
