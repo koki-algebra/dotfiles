@@ -47,6 +47,7 @@ switchGOROOT() {
 
 # Python
 source "$HOME/.rye/env"
+source $HOME/.local/bin/env
 
 # Remove duplicate paths
 typeset -U PATH
