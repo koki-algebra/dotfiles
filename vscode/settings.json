@@ -7,6 +7,7 @@
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "workbench.colorTheme": "Palenight Theme",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "terminal.integrated.fontSize": 16,
   "files.autoSave": "afterDelay",
