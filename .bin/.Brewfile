@@ -39,6 +39,7 @@ brew "awscli"
 
 cask "slack"
 cask "visual-studio-code"
+cask "cursor"
 cask "zoom"
 cask "warp"
 cask "docker"

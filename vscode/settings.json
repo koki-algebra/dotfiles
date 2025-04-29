@@ -6,7 +6,7 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Palenight Theme",
+  "workbench.colorTheme": "Shades of Purple",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "terminal.integrated.fontSize": 16,
@@ -52,5 +52,6 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "typescript.updateImportsOnFileMove.enabled": "never"
 }
