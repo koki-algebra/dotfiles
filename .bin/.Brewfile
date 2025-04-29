@@ -1,5 +1,8 @@
 cask_args appdir: "/Applications"
 
+# dev tools manager
+brew "mise"
+
 # Vim
 brew "vim"
 
@@ -19,7 +22,6 @@ brew "gh"
 brew "pre-commit"
 
 # gRPC
-brew "grpcurl"
 brew "buf"
 
 # Database
