@@ -45,9 +45,8 @@ switchGOROOT() {
   go version
 }
 
-# Python
-source "$HOME/.rye/env"
-source $HOME/.local/bin/env
+# mise
+eval "$(mise activate zsh)"
 
 # Remove duplicate paths
 typeset -U PATH
