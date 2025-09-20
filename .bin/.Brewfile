@@ -29,9 +29,6 @@ brew "libpq"
 brew "mysql-client"
 brew "sqlfluff"
 
-# Node.js
-brew "nvm"
-
 # Terraform
 brew "tfenv"
 brew "tflint"
