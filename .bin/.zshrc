@@ -26,9 +26,6 @@ fi
 # direnv
 eval "$(direnv hook zsh)"
 
-# nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # PostgreSQL client
 export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 
