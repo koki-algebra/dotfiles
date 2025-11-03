@@ -41,10 +41,9 @@ cask "visual-studio-code"
 cask "cursor"
 cask "zoom"
 cask "warp"
-cask "docker"
+cask "docker-desktop"
 cask "discord"
-cask "arc"
-cask "google-cloud-sdk"
+cask "gcloud-cli"
 
 mas "LINE", id: 539883307
 mas "Bitwarden", id: 1352778147
