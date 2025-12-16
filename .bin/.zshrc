@@ -45,5 +45,9 @@ switchGOROOT() {
 # mise
 eval "$(mise activate zsh)"
 
+# Google Cloud SDK
+
+gcs() { gcloud storage "$@"; }
+
 # Remove duplicate paths
 typeset -U PATH
