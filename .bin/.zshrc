@@ -26,6 +26,9 @@ fi
 # direnv
 eval "$(direnv hook zsh)"
 
+# Homebrew
+export PATH="$HOME/.local/bin:$PATH"
+
 # PostgreSQL client
 export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 
