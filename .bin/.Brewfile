@@ -4,7 +4,7 @@ cask_args appdir: "/Applications"
 brew "mise"
 
 # Vim
-brew "vim"
+brew "neovim"
 
 # Utility commands
 brew "eza"
