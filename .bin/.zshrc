@@ -29,6 +29,9 @@ eval "$(direnv hook zsh)"
 # Homebrew
 export PATH="$HOME/.local/bin:$PATH"
 
+# WezTerm
+export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH"
+
 # PostgreSQL client
 export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 

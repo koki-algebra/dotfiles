@@ -4,3 +4,4 @@
 # But not these directories
 !.bin/.config/gh/
 !.bin/.config/git/
+!.bin/.config/wezterm/
