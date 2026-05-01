@@ -14,44 +14,46 @@
   "explorer.confirmDelete": false,
   "debug.console.fontSize": 16,
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
   },
   "remote.autoForwardPortsSource": "hybrid",
   "json.schemaDownload.enable": true,
   "[markdown]": {
     "editor.insertSpaces": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "markdown.preview.breaks": true,
   "markdownlint.config": {
     "MD010": false,
     "MD024": false,
-    "MD040": false
+    "MD040": false,
   },
   "sqlfluff.executablePath": "sqlfluff",
   "sqlfluff.config": "${workspaceFolder}/.sqlfluff",
   "[sql]": {
-    "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+    "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
   },
   "go.toolsManagement.autoUpdate": true,
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--config=${workspaceFolder}/.golangci.yml", "--fast"],
   "[rust]": {
     "editor.insertSpaces": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "material-icon-theme.files.color": "#90a4ae",
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "typescript.updateImportsOnFileMove.enabled": "never"
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "docker.extension.enableComposeLanguageServer": false,
+  "protobuf.diagnostics.documentationComments": false,
 }

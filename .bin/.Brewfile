@@ -36,6 +36,7 @@ brew "tflint"
 # AWS
 brew "awscli"
 
+cask "raycast"
 cask "slack"
 cask "visual-studio-code"
 cask "cursor"
