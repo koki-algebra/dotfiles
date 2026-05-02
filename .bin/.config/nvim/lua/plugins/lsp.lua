@@ -43,8 +43,11 @@ return {
           map("n", "K", function()
             for _, win in ipairs(vim.api.nvim_list_wins()) do
               if vim.api.nvim_win_get_config(win).relative ~= "" then
-                vim.api.nvim_win_close(win, false)
-                return
+                local buf = vim.api.nvim_win_get_buf(win)
+                if vim.bo[buf].filetype == "markdown" and vim.bo[buf].buftype == "nofile" then
+                  vim.api.nvim_win_close(win, false)
+                  return
+                end
               end
             end
             vim.lsp.buf.hover()
