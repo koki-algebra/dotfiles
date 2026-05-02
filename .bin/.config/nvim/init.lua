@@ -7,7 +7,6 @@ vim.g.maplocalleader = " "
 local opt = vim.opt
 
 opt.number = true
-opt.relativenumber = true
 opt.cursorline = true
 opt.termguicolors = true
 opt.signcolumn = "yes"
