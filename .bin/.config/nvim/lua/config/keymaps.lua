@@ -22,8 +22,5 @@ map("n", "N", "Nzzzv")
 
 map("x", "<leader>p", [["_dP]])
 
-map("n", "<S-h>", "<cmd>bprevious<CR>")
-map("n", "<S-l>", "<cmd>bnext<CR>")
-
 map("n", "<leader>w", "<cmd>w<CR>", { desc = "Save" })
 map("n", "<leader>q", "<cmd>q<CR>", { desc = "Quit" })
