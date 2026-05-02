@@ -11,7 +11,7 @@ config.macos_window_background_blur = 20
 config.window_decorations = 'RESIZE'
 
 -- Font
-config.font = wezterm.font('JetBrains Mono', { weight = 'Regular' })
+config.font = wezterm.font('Hack Nerd Font', { weight = 'Regular' })
 config.font_size = 16
 config.line_height = 1.2
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
