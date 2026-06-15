@@ -1,7 +1,7 @@
 .PHONY: help
 .DEFAULT_GOAL := help
 
-init: ## Bootstrap: install Homebrew, Xcode CLI tools, Rosetta 2
+init: ## Bootstrap: install Homebrew, Xcode CLI tools
 	@echo "\033[0;34mRun init.sh\033[0m"
 	@.bin/init.sh
 	@echo "\033[0;34mDone.\033[0m"
@@ -13,11 +13,6 @@ apply: ## Apply dotfiles with chezmoi
 
 diff: ## Preview what chezmoi would change
 	@chezmoi diff
-
-code: ## Sync VS Code settings and install extensions
-	@echo "\033[0;34mRun vscode/sync.sh\033[0m"
-	@vscode/sync.sh
-	@echo "\033[0;32mDone.\033[0m"
 
 help: ## Show help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \

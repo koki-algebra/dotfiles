@@ -4,3 +4,4 @@ Makefile
 README.md
 .gitignore
 .DS_Store
+dot_config/gh/hosts.yml

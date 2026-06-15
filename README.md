@@ -21,7 +21,6 @@ make init
 | `chezmoi apply` / `make apply` | dotfiles を適用 |
 | `chezmoi diff` / `make diff` | 変更内容をプレビュー |
 | `mise install` | Go ツールをインストール・更新 |
-| `make code` | VS Code の settings.json をシンボリックリンク |
 
 ## ファイル構成
 
@@ -30,20 +29,22 @@ dotfiles/
 ├── dot_Brewfile          # ~/.Brewfile（Homebrew パッケージ一覧）
 ├── dot_gitconfig         # ~/.gitconfig
 ├── dot_zshrc             # ~/.zshrc
+├── dot_claude/           # ~/.claude/（Claude Code 設定）
 ├── dot_config/
 │   ├── gh/               # gh CLI 設定
 │   ├── git/              # グローバル gitignore
+│   ├── karabiner/        # Karabiner-Elements 設定
 │   ├── mise/             # mise 設定（Go ツール含む）
 │   ├── nvim/             # Neovim 設定
 │   └── wezterm/          # WezTerm 設定
+├── Library/
+│   └── Application Support/Code/User/
+│       └── settings.json # VS Code 設定
 ├── .chezmoiscripts/
 │   ├── run_onchange_after_brew.sh.tmpl   # Brewfile 変更時に brew bundle を実行
 │   └── run_once_after_defaults.sh        # macOS システム設定（初回のみ）
-├── .bin/
-│   └── init.sh           # 新マシン向けブートストラップスクリプト
-└── vscode/
-    ├── settings.json     # VS Code 設定
-    └── sync.sh           # settings.json をシンボリックリンク
+└── .bin/
+    └── init.sh           # 新マシン向けブートストラップスクリプト
 ```
 
 ## dotfiles の編集
