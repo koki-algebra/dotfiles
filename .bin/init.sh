@@ -16,7 +16,10 @@ fi
 # Install Xcode Command Line Tools
 if ! xcode-select --print-path &>/dev/null; then
   echo "Command line tools not found. Installing..."
-  xcode-select --install
+  xcode-select --install 2>/dev/null || true
+  echo "Waiting for Xcode Command Line Tools installation to complete..."
+  until xcode-select --print-path &>/dev/null; do sleep 5; done
+  echo "Command line tools installed."
 else
   echo "Command line tools are already installed."
 fi

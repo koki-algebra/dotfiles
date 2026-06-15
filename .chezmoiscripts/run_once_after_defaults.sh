@@ -54,7 +54,7 @@ defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool fals
 # ====================
 defaults write com.apple.dock expose-group-apps -bool true
 defaults write com.apple.spaces spans-displays -bool false
-defaults write com.apple.dock mru-spaces false
+defaults write com.apple.dock mru-spaces -bool false
 
 # ====================
 # Feedback Assistant
