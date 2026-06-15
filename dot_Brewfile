@@ -32,6 +32,7 @@ brew "libpq"
 brew "mysql-client"
 brew "sqlfluff"
 
+cask "karabiner-elements"
 cask "raycast"
 cask "wezterm@nightly"
 cask "slack"
