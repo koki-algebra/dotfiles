@@ -1,0 +1,44 @@
+{
+  "theme": "auto",
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Edit(**)",
+      "Bash(rg *)",
+      "Bash(fd *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(gh repo view *)",
+      "Bash(gh pr list *)",
+      "Bash(gh diff *)",
+      "Bash(gh pr checks *)",
+      "Bash(gh workflow list *)",
+      "Bash(gh workflow view *)",
+      "Bash(gh run list *)",
+      "Bash(gh run view *)",
+      "Bash(gh api repos/*/actions/*:*)",
+      "Bash(gh api repos/*/check-runs/*:*)",
+      "Bash(gh api repos/*/comments/*:*)"
+    ],
+    "deny": [
+      "Read(**/.env)",
+      "Bash(rm -rf *)",
+      "Bash(sudo *)"
+    ],
+    "ask": [
+      "Write(**)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git switch *)",
+      "Bash(git merge *)",
+      "Bash(git rebase *)",
+      "Bash(gh pr edit *)",
+      "Bash(gh pr merge *)"
+    ]
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true
+  }
+}
