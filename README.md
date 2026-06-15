@@ -17,7 +17,7 @@ make init
 ## 日常的な使い方
 
 | コマンド | 内容 |
-|---|---|
+| --- | --- |
 | `chezmoi apply` / `make apply` | dotfiles を適用 |
 | `chezmoi diff` / `make diff` | 変更内容をプレビュー |
 | `mise install` | Go ツールをインストール・更新 |
