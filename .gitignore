@@ -1,8 +1,2 @@
-# Ignore everything in .bin/.config
-.bin/.config/*
-
-# But not these directories
-!.bin/.config/gh/
-!.bin/.config/git/
-!.bin/.config/wezterm/
-!.bin/.config/nvim
+.DS_Store
+.bin/.config

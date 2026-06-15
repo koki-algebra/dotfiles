@@ -1,0 +1,9 @@
+[tools]
+node = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
+"go:golang.org/x/tools/cmd/goimports" = "latest"
+"go:go.uber.org/mock/mockgen" = "latest"
+"go:github.com/99designs/gqlgen" = "latest"
+"go:google.golang.org/protobuf/cmd/protoc-gen-go" = "latest"
+"go:google.golang.org/grpc/cmd/protoc-gen-go-grpc" = "latest"
+"go:connectrpc.com/connect/cmd/protoc-gen-connect-go" = "latest"

@@ -1,5 +1,8 @@
 cask_args appdir: "/Applications"
 
+# dotfiles manager
+brew "chezmoi"
+
 # dev tools manager
 brew "mise"
 
@@ -29,21 +32,9 @@ brew "libpq"
 brew "mysql-client"
 brew "sqlfluff"
 
-# Terraform
-brew "tfenv"
-brew "tflint"
-
-# AWS
-brew "awscli"
-
 cask "raycast"
 cask "wezterm@nightly"
 cask "slack"
 cask "visual-studio-code"
-cask "zoom"
 cask "docker-desktop"
-cask "discord"
 cask "gcloud-cli"
-
-mas "LINE", id: 539883307
-mas "Bitwarden", id: 1352778147

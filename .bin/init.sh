@@ -1,19 +1,20 @@
 #!/bin/zsh
 
-# Install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-if [ "$(uname -m)" = "arm64" ]; then
-  (
-    echo
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"'
-  ) >>/Users/${USER}/.zprofile
-  eval "$(/opt/homebrew/bin/brew shellenv)"
+set -e
+
+DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+
+# Install Homebrew
+if ! command -v brew &>/dev/null; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  if [ "$(uname -m)" = "arm64" ]; then
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>"/Users/${USER}/.zprofile"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
 fi
 
-# Install xcode
-# Check if command line tools are installed
+# Install Xcode Command Line Tools
 if ! xcode-select --print-path &>/dev/null; then
-  # Install command line tools
   echo "Command line tools not found. Installing..."
   xcode-select --install
 else
@@ -21,18 +22,13 @@ else
 fi
 
 # Install Rosetta 2 for Apple Silicon
-# Check if Rosetta 2 is installed
-if [[ $(sysctl -n machdep.cpu.brand_string) != *"Apple M"* ]]; then
-  echo "Rosetta 2 is already installed."
-  exit 0
+if [[ $(sysctl -n machdep.cpu.brand_string) == *"Apple M"* ]]; then
+  /usr/sbin/softwareupdate --install-rosetta --agree-to-license || true
 fi
 
-# Install Rosetta 2
-/usr/sbin/softwareupdate --install-rosetta --agree-to-license
-if [ $? -ne 0 ]; then
-  echo "Error: Failed to install Rosetta 2."
-  exit 1
-fi
+# Install chezmoi and apply dotfiles
+brew install chezmoi
+chezmoi init --source "$DOTFILES_DIR"
+chezmoi apply
 
-echo "Rosetta 2 has been installed successfully."
-exit 0
+echo "Done."

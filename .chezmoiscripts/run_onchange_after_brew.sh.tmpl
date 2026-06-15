@@ -1,0 +1,11 @@
+#!/bin/bash
+# hash: {{ include "dot_Brewfile" | sha256sum }}
+
+set -e
+
+if [ "$(uname)" != "Darwin" ]; then
+  echo "Not macOS, skipping brew bundle"
+  exit 0
+fi
+
+brew bundle --global
