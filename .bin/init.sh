@@ -21,11 +21,6 @@ else
   echo "Command line tools are already installed."
 fi
 
-# Install Rosetta 2 for Apple Silicon
-if [[ $(sysctl -n machdep.cpu.brand_string) == *"Apple M"* ]]; then
-  /usr/sbin/softwareupdate --install-rosetta --agree-to-license || true
-fi
-
 # Install chezmoi and apply dotfiles
 brew install chezmoi
 chezmoi init --source "$DOTFILES_DIR"

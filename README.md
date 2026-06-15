@@ -11,9 +11,8 @@ make init
 
 1. Homebrew のインストール
 2. Xcode Command Line Tools のインストール
-3. Rosetta 2 のインストール（Apple Silicon）
-4. chezmoi のインストール
-5. `chezmoi apply`（dotfiles の配置・Homebrew パッケージインストール・macOS 設定）
+3. chezmoi のインストール
+4. `chezmoi apply`（dotfiles の配置・Homebrew パッケージインストール・macOS 設定）
 
 ## 日常的な使い方
 
