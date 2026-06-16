@@ -13,9 +13,16 @@ if ! command -v brew &>/dev/null; then
   fi
 fi
 
-# Install chezmoi and apply dotfiles
+# Install chezmoi
 brew install chezmoi
-chezmoi init --source "$DOTFILES_DIR"
+
+# Configure chezmoi to use this repo as the source directory
+mkdir -p "$HOME/.config/chezmoi"
+cat > "$HOME/.config/chezmoi/chezmoi.toml" << EOF
+sourceDir = "$DOTFILES_DIR"
+EOF
+
+# Apply dotfiles
 chezmoi apply
 
 echo "Done."
