@@ -17,9 +17,11 @@
       "Bash(gh workflow view *)",
       "Bash(gh run list *)",
       "Bash(gh run view *)",
-      "Bash(gh api repos/*/actions/*:*)",
-      "Bash(gh api repos/*/check-runs/*:*)",
-      "Bash(gh api repos/*/comments/*:*)"
+      "Bash(gh api repos/*/*/actions/*)",
+      "Bash(gh api repos/*/*/check-runs/*)",
+      "Bash(gh api repos/*/*/comments/*)",
+      "Bash(gh api repos/*/*/pulls/*/comments*)",
+      "Bash(gh api repos/*/*/pulls/*/reviews*)"
     ],
     "deny": [
       "Read(**/.env)",
