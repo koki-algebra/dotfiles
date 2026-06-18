@@ -21,12 +21,15 @@
       "Bash(gh api repos/*/*/check-runs/*)",
       "Bash(gh api repos/*/*/comments/*)",
       "Bash(gh api repos/*/*/pulls/*/comments*)",
-      "Bash(gh api repos/*/*/pulls/*/reviews*)"
+      "Bash(gh api repos/*/*/pulls/*/reviews*)",
+      "Bash(go test *)",
+      "Bash(go build *)"
     ],
     "deny": [
       "Read(**/.env)",
       "Bash(rm -rf *)",
-      "Bash(sudo *)"
+      "Bash(sudo *)",
+      "Bash(cd *)"
     ],
     "ask": [
       "Write(**)",
