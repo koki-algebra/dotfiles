@@ -3,7 +3,6 @@
   "permissions": {
     "allow": [
       "Read(**)",
-      "Edit(**)",
       "Bash(rg *)",
       "Bash(fd *)",
       "Bash(git status *)",
@@ -36,7 +35,8 @@
       "Bash(gh api repos/*/*/pulls/*/comments*)",
       "Bash(gh api repos/*/*/pulls/*/reviews*)",
       "Bash(go test *)",
-      "Bash(go build *)"
+      "Bash(go build *)",
+      "Edit(**)"
     ],
     "deny": [
       "Read(**/.env)",
@@ -45,7 +45,6 @@
       "Bash(cd *)"
     ],
     "ask": [
-      "Write(**)",
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(git push *)",
