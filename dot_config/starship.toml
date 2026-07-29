@@ -4,10 +4,6 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$golang\
-$nodejs\
-$python\
-$rust\
 $character"""
 
 right_format = """$cmd_duration"""
@@ -15,39 +11,23 @@ right_format = """$cmd_duration"""
 add_newline = false
 
 [directory]
-style = "cyan bold"
+style = "bold #89b4fa"
 truncation_length = 3
 truncate_to_repo = true
 
 [character]
-success_symbol = "[❯](green bold)"
-error_symbol = "[❯](red bold)"
+success_symbol = "[❯](bold #a6e3a1)"
+error_symbol = "[❯](bold #f38ba8)"
 
 [git_branch]
 format = "[$symbol$branch]($style) "
-style = "purple bold"
+style = "bold #cba6f7"
 
 [git_status]
 format = "([$all_status$ahead_behind]($style)) "
-style = "yellow bold"
-
-[golang]
-format = "[$symbol$version]($style) "
-symbol = "🐹 "
-
-[nodejs]
-format = "[$symbol$version]($style) "
-symbol = "⬢ "
-
-[python]
-format = "[$symbol$version]($style) "
-symbol = "🐍 "
-
-[rust]
-format = "[$symbol$version]($style) "
-symbol = "🦀 "
+style = "bold #fab387"
 
 [cmd_duration]
 format = "[$duration]($style)"
-style = "yellow dimmed"
+style = "dimmed #f9e2af"
 min_time = 2000
