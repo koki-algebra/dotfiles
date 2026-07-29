@@ -71,7 +71,7 @@ config.cursor_blink_rate = 500
 config.scrollback_lines = 10000
 
 -- Keybindings
-config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 2000 }
+config.leader = { key = 'q', mods = 'CTRL', timeout_milliseconds = 2000 }
 local keybinds = require 'keybinds'
 config.keys = keybinds.keys
 config.key_tables = keybinds.key_tables
