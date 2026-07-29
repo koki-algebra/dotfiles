@@ -1,8 +1,69 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
 
+-- Show which key table is active in the status area
+wezterm.on('update-right-status', function(window, pane)
+  local name = window:active_key_table()
+  if name then
+    name = 'TABLE: ' .. name
+  end
+  window:set_right_status(name or '')
+end)
+
 return {
   keys = {
+    -- Workspace
+    { key = 'w', mods = 'LEADER', action = act.ShowLauncherArgs{ flags = 'WORKSPACES', title = 'Select workspace' } },
+    {
+      key = '$',
+      mods = 'LEADER',
+      action = act.PromptInputLine{
+        description = '(wezterm) Set workspace title:',
+        action = wezterm.action_callback(function(win, pane, line)
+          if line then
+            wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
+          end
+        end),
+      },
+    },
+    {
+      key = 'W',
+      mods = 'LEADER|SHIFT',
+      action = act.PromptInputLine{
+        description = '(wezterm) Create new workspace:',
+        action = wezterm.action_callback(function(window, pane, line)
+          if line then
+            window:perform_action(act.SwitchToWorkspace{ name = line }, pane)
+          end
+        end),
+      },
+    },
+
+    -- Command palette
+    { key = 'p', mods = 'SUPER', action = act.ActivateCommandPalette },
+
+    -- Tab move (position, not activation)
+    { key = '{', mods = 'LEADER', action = act.MoveTabRelative(-1) },
+    { key = '}', mods = 'LEADER', action = act.MoveTabRelative(1) },
+
+    -- Copy mode
+    { key = '[', mods = 'LEADER', action = act.ActivateCopyMode },
+
+    -- Pane split / close / move
+    { key = 'd', mods = 'LEADER', action = act.SplitVertical{ domain = 'CurrentPaneDomain' } },
+    { key = 'r', mods = 'LEADER', action = act.SplitHorizontal{ domain = 'CurrentPaneDomain' } },
+    { key = 'x', mods = 'LEADER', action = act.CloseCurrentPane{ confirm = true } },
+    { key = 'h', mods = 'LEADER', action = act.ActivatePaneDirection 'Left' },
+    { key = 'l', mods = 'LEADER', action = act.ActivatePaneDirection 'Right' },
+    { key = 'k', mods = 'LEADER', action = act.ActivatePaneDirection 'Up' },
+    { key = 'j', mods = 'LEADER', action = act.ActivatePaneDirection 'Down' },
+    { key = '[', mods = 'CTRL|SHIFT', action = act.PaneSelect },
+    { key = 'z', mods = 'LEADER', action = act.TogglePaneZoomState },
+
+    -- Key tables
+    { key = 's', mods = 'LEADER', action = act.ActivateKeyTable{ name = 'resize_pane', one_shot = false } },
+    { key = 'a', mods = 'LEADER', action = act.ActivateKeyTable{ name = 'activate_pane', timeout_milliseconds = 1000 } },
+
     { key = 'Tab', mods = 'CTRL', action = act.ActivateTabRelative(1) },
     { key = 'Tab', mods = 'SHIFT|CTRL', action = act.ActivateTabRelative(-1) },
     { key = 'Enter', mods = 'ALT', action = act.ToggleFullScreen },
@@ -148,6 +209,21 @@ return {
   },
 
   key_tables = {
+    resize_pane = {
+      { key = 'h', action = act.AdjustPaneSize{ 'Left', 1 } },
+      { key = 'l', action = act.AdjustPaneSize{ 'Right', 1 } },
+      { key = 'k', action = act.AdjustPaneSize{ 'Up', 1 } },
+      { key = 'j', action = act.AdjustPaneSize{ 'Down', 1 } },
+      { key = 'Enter', action = 'PopKeyTable' },
+    },
+
+    activate_pane = {
+      { key = 'h', action = act.ActivatePaneDirection 'Left' },
+      { key = 'l', action = act.ActivatePaneDirection 'Right' },
+      { key = 'k', action = act.ActivatePaneDirection 'Up' },
+      { key = 'j', action = act.ActivatePaneDirection 'Down' },
+    },
+
     copy_mode = {
       { key = 'Tab', mods = 'NONE', action = act.CopyMode 'MoveForwardWord' },
       { key = 'Tab', mods = 'SHIFT', action = act.CopyMode 'MoveBackwardWord' },
