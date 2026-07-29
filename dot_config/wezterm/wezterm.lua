@@ -23,6 +23,18 @@ config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 config.color_scheme = 'Catppuccin Mocha'
 
 -- Tab bar
+wezterm.on('format-tab-title', function(tab)
+  local title
+  local cwd = tab.active_pane.current_working_dir
+  if cwd and cwd.path then
+    local path = cwd.path:gsub('/$', '')
+    title = path:match('([^/]+)$') or path
+  else
+    title = tab.active_pane.title
+  end
+  return ' ' .. title .. ' '
+end)
+
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 config.show_new_tab_button_in_tab_bar = false
