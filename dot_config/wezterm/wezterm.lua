@@ -25,7 +25,8 @@ config.color_scheme = 'Catppuccin Mocha'
 -- Tab bar
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
-config.tab_bar_at_bottom = true
+config.show_new_tab_button_in_tab_bar = false
+config.show_close_tab_button_in_tabs = false
 config.tab_max_width = 32
 config.colors = {
   tab_bar = {
@@ -56,5 +57,8 @@ config.cursor_blink_rate = 500
 
 -- Scrollback
 config.scrollback_lines = 10000
+
+-- Keybindings
+config.keys = require 'keybinds'
 
 return config
