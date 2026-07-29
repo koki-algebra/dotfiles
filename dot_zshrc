@@ -51,6 +51,9 @@ switchGOROOT() {
 # mise
 eval "$(mise activate zsh)"
 
+# Starship prompt
+eval "$(starship init zsh)"
+
 # Google Cloud SDK
 
 gcs() { gcloud storage "$@"; }

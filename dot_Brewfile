@@ -6,6 +6,9 @@ brew "chezmoi"
 # dev tools manager
 brew "mise"
 
+# prompt
+brew "starship"
+
 # Vim
 brew "neovim"
 
@@ -37,5 +40,4 @@ cask "raycast"
 cask "wezterm@nightly"
 cask "slack"
 cask "visual-studio-code"
-cask "docker-desktop"
 cask "gcloud-cli"
