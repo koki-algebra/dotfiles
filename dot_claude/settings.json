@@ -41,7 +41,6 @@
     ],
     "deny": [
       "Read(**/.env)",
-      "Bash(rm -rf *)",
       "Bash(sudo *)",
       "Bash(cd *)"
     ],
