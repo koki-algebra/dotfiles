@@ -9,6 +9,7 @@ config.window_padding = { left = 12, right = 12, top = 10, bottom = 10 }
 config.window_background_opacity = 0.92
 config.macos_window_background_blur = 20
 config.window_decorations = 'RESIZE'
+config.native_macos_fullscreen_mode = true
 
 -- Font
 config.font = wezterm.font_with_fallback({
