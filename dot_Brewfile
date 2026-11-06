@@ -22,6 +22,9 @@ brew "jnv"
 brew "jq"
 brew "direnv"
 
+# AI agent tools
+brew "agent-browser"
+
 # GitHub
 brew "git"
 brew "gh"

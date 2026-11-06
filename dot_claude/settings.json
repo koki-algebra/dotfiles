@@ -28,6 +28,7 @@
       "Bash(gh api repos/*/*/pulls/*/reviews*)",
       "Bash(go test *)",
       "Bash(go build *)",
+      "Bash(agent-browser *)",
       "Edit(**)"
     ],
     "deny": [
