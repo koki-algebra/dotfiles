@@ -17,3 +17,4 @@
 - Never use `find` to search for files; use `fd` instead.
 - Never use `grep` to search file contents; use `rg` (ripgrep) instead.
 - When parsing JSON output (e.g., from `gh` commands), use `jq` instead of string manipulation or manual parsing.
+- For browser tasks (opening pages, clicking, screenshots, etc.), use the `agent-browser` skill by default. Do not use `claude-in-chrome` unless explicitly asked.
