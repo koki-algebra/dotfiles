@@ -1,0 +1,15 @@
+{
+  "config": {
+    "default": true,
+    // Disabled: docs are mostly Japanese prose, where a hard line-length limit is not useful
+    "MD013": false,
+    // Disabled: not worth requiring a language tag on every fenced code block
+    "MD040": false,
+    // Only flag duplicate headings within the same parent section: some docs
+    // intentionally reuse identical subheadings under different sections
+    // (e.g. a checklist copied from one section into another)
+    "MD024": { "siblings_only": true }
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**"]
+}
