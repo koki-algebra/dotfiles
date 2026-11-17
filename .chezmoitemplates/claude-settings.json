@@ -1,5 +1,6 @@
 {
   "theme": "auto",
+  "autoMemoryEnabled": false,
   "permissions": {
     "allow": [
       "Read(**)",
