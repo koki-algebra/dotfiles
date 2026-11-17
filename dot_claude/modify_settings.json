@@ -1,0 +1,6 @@
+{{- /* chezmoi:modify-template */ -}}
+{{- /* Merge managed settings (.chezmoitemplates/claude-settings.json) into the live file, keeping machine-specific keys. */ -}}
+{{- $live := dict -}}
+{{- if .chezmoi.stdin }}{{ $live = fromJson .chezmoi.stdin }}{{ end -}}
+{{- $managed := includeTemplate "claude-settings.json" . | fromJson -}}
+{{- mergeOverwrite $live $managed | toPrettyJson }}
