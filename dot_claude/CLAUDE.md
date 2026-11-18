@@ -12,6 +12,11 @@
 - Use `git switch` to switch branches (e.g., `git switch main`, `git switch -c new-branch`).
 - Use `git restore` to discard working tree changes (e.g., `git restore file.txt`).
 
+## GitHub Rules
+
+- Never post replies, comments, or reviews on GitHub (issues, pull requests, discussions, review threads) unless explicitly asked.
+- When a reply seems appropriate, draft it and show it to the user instead of posting it.
+
 ## Tool Rules
 
 - Never use `find` to search for files; use `fd` instead.
