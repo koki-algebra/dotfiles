@@ -15,7 +15,7 @@
 ## GitHub Rules
 
 - Never post replies, comments, or reviews on GitHub (issues, pull requests, discussions, review threads) unless explicitly asked.
-- When a reply seems appropriate, draft it and show it to the user instead of posting it.
+- Do not draft or suggest GitHub replies, and do not ask whether to post one. Only write a reply when the user explicitly asks for it.
 
 ## Tool Rules
 
