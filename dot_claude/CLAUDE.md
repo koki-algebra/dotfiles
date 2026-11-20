@@ -1,5 +1,11 @@
 # Rules
 
+## Code Comment Rules
+
+- Do not write comments that restate what the code already makes clear.
+- Only add a comment when it conveys something the code cannot, such as intent, a non-obvious reason, or a constraint.
+- When a comment is needed, keep it short and to the point.
+
 ## Shell Command Rules
 
 - Never use `cd` to change the working directory.
